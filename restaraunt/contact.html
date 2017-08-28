@@ -5,13 +5,11 @@
     <style>
         table, th, td {padding: 15px ;
         }
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;}
-    input {align: center}
+        input {align: center}
     li {display: inline;padding:10px}
     table{text-align: right}
+    #section{font-weight:bolder}
+    
 </style>
 <link href="restarauntStyle.css" 
       rel="stylesheet" 
@@ -38,6 +36,7 @@
  <form action="#" method="post">
         <div>
            </br>
+        <div id="section">
         <tr>
             <td>
         Name: <input type="text" name="FirstNameTextInput" ><br/>
@@ -45,6 +44,7 @@
         Email: <input type="text" name="LastNameTextInput"><br/>
         </br>
         Phone: <input type="text" name="EmailTextInput"><br/>
+        </div>
         </br>
         Reason for Inquiry: <select name="reason">
             <option value="catering">Catering</option>
