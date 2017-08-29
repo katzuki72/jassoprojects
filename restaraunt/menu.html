@@ -3,13 +3,18 @@
 <head>
     <title>Jibba Jabba Menu</title>
     <style>
-        table, th, td {border: 1px ; padding: 15px ;
+        table.table1,table.table1 th,table.table1 td {border: 1px ; padding: 15px ;
         }
-        table{width:90%; align-self:center}
-         th {text-align: center; font-size: 130%} 
+        table.table1{width:90%; align-self:center; padding-left: 60px }
+         table.table1 th {text-align: center; font-size: 130%} 
     li {display: inline;padding:10px}
     #items{text-align:center}
     body{background-color:lemonchiffon}
+    caption{align-content: center; font-weight: bold; font-size: x-large
+    ; text-decoration: underline}
+    table.table2, table.table2 td{text-align: left; width: 60%; padding-left: 85px}
+    table.table2{margin-left: auto;margin-right: auto}
+    table.table2 td{height: 30px}
 </style>
 <link href="restarauntStyle.css" 
       rel="stylesheet" 
@@ -33,7 +38,7 @@
 </br>
 <hr>
 <div id="items">
-    <table>
+    <table class="table1">
         <tr>
             <th>Burger and Fries</th>
             <th>Hot Dog and Chips</th>
@@ -101,12 +106,27 @@
                 $7.95
             </td>
         </tr>
+        <div id="pad">
+        </table>
+        <table class="table2">
+          <caption>Beverage List</caption>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>Root Beer</td>  
+             <td>$3.00</td>        
         </tr>
-    </table>
+            <tr>
+             <td>Bottled Water</td>  
+             <td>$1.25</td>          
+        </tr>
+        <tr>
+             <td>Lemonaide</td>  
+             <td>$1.00</td>          
+        </tr>
+        <tr>
+             <td>Ice Tea</td>  
+             <td>$1.25</td>          
+        </tr>
+           </table>
 </div>
 <hr>
 <div>

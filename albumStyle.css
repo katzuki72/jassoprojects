@@ -1,3 +1,9 @@
-#th1{width:30%}
-            #th2{width:65%}
-
+#th1{width:25%}
+#th2{width:60%}
+table{background-color: lightcyan}
+caption{font-weight: bolder;font-size: large}
+a:link{text-decoration: none}
+a:visited{text-decoration: none}
+a:hover{text-decoration: underline green; background-color:lightgreen}
+a:active{text-align: none}
+td{font-style: italic}
