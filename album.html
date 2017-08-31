@@ -1,24 +1,33 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<html>
     <head>
         <title> Led Zepplin </title>
+        <meta charset="utf-8">
         <style>
             table{Text-align:center; border:2px ;width:80%; border-style: solid;
-                border-collapse: collapse}
+                border-collapse: collapse;margin-left: auto;margin-right: auto;
+            background-color:lightcoral}
              td, th{border:2px black; border-style: solid}
             #album{font-family: Georgia, 'Times New Roman', Times, serif}
             #bmap{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
-           #pic{background-image: url("images/Led.jpg"); background-position:center; size: 80px 60px; 
-            min-height:50% ; padding: 12%; background-repeat: no-repeat}
+          /* #pic{background-image: url("images/Led.jpg"); background-position:center; size: 80px 60px; 
+            min-height:50% ; padding: 12%; background-repeat: no-repeat}*/
+            #pic{margin-top: 20px}
             h4{font-style: italic}
+            caption{text-align: center}
         </style>
-        <link href="albumStyle.css" 
-      rel="stylesheet" 
-      type="text/css" />
+        <link href="albumStyle.css" />
+      <rel="stylesheet"/>
+      <type="text/css"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div id=pic ; style="text-align:center"; >
+        <div class="container">
+        <div id=pic ; style="text-align:center" >
+            <img src="images\Led.jpg" class="img-circle">
        </div>
         <div style="Text-align:center">
         <h1 id=album> ZOSO </h1>
@@ -26,7 +35,7 @@
         <h3> November 8, 1971 </h3>
         </div>
          <hr>
-        <div>
+        
         <div>
         <h2><center id=bmap>Band Members and Producers</center></h2>
         <ul>
@@ -36,57 +45,58 @@
         <h4><li>John Bonham – drums, percussion</li></h4>
         </ul>
         </div>
-        <div>
+        <div class="table-responsive">
           
-            <table>
-                 <caption>Tracks</caption>
+            <table class="table-striped">
+                 <caption style="text-align:center">Tracks</caption>
                 <tr bgcolor="grey">
                     <th>Track#</th>
                     <th id=th1>Track Title</th>
                     <th id=th2>Track Length</th>
                 </tr>
                 <tr>
-                    <td>1</td>
+                    <td scope="row">1</td>
                     <td>"Black Dog"</td>
                     <td>4:54</td>
                 </tr>
                 <tr>
-                    <td>2</td>
+                    <td scope="row">2</td>
                     <td>"Rock and Roll"</td>
                     <td>3:40</td>
                 <tr>
-                    <td>3</td>
+                    <td scope="row">3</td>
                     <td>"The Battle of Evermore"</td>
                     <td>5:51</td>
                 </tr>
                 <tr>
-                    <td>4</td>
+                    <td scope="row">4</td>
                     <td>"Stairway to Heaven"</td>
                     <td>8:02</td>
                 </tr>
                 <tr>
-                    <td>5</td>
+                    <td scope="row">5</td>
                     <td>"Misty Mountain Hop"</td>
                     <td>4:38</td>
                 </tr>
                 <tr>
-                    <td>6</td>
+                    <td scope="row">6</td>
                     <td>"Four Sticks"</td>
                     <td>4:44</td>
                 </tr>
                 <tr>
-                    <td>7</td>
+                    <td scope="row">7</td>
                     <td>"Going to California"</td>
                     <td>3:31</td>
                 </tr>
                 <tr>
-                    <td>8</td>
+                    <td scope="row">8</td>
                     <td>"When The Levee Breaks"</td>
                     <td>7:07</td>
                 </tr>
 
             </table>
           
+        </div>
         </div>
     </body>
  </html>
