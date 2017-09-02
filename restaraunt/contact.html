@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Jibba Jabba Contact</title>
     <style>
         table, th, td {padding: 15px ;
-        }
-        input {align: center}
+        margin-left: 20px}
+        input {text-align: center}
     li {display: inline;padding:10px}
-    table{text-align: right}
-    #section{font-weight:bolder}
-    
+    table{text-align: right;margin-left: 20px}
+    section{font-weight:bolder}
 </style>
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
 <link href="restarauntStyle.css" 
       rel="stylesheet" 
       type="text/css" />
 </head>
      <body>
+         <div class="jumbotron" style="text-align:center">
+  <h1>Opening New Location!</h1> 
+  <p>Bardstown road in the Highlands!</p> 
+</div>
     <div>
         <header>
         <h1>Jibba Jabba BBQ</h1>
@@ -24,8 +32,8 @@
     <hr>
     </br>
     <div>
- <ul>
-        <li><a href="restaraunt.html">Home</a></li>
+ <ul class="nav nav-pills">
+        <li class="active"><a href="restaraunt.html"><span class="glyphicon glyphicon-home"></a></li>
        <li><a href="menu.html">Menu</a></li>
        <li><a href="contact.html">Contact Us</a></li>
  </ul>
@@ -74,6 +82,7 @@
     <footer><p>1010 Preston Highwy, Louisville, KY 40229</p>
     <p>(502) 123-4567</p></footer>
 </div>
-     
+     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jibba Jabba Menu</title>
     <style>
-        table.table1,table.table1 th,table.table1 td {border: 1px ; padding: 15px ;
-        }
-        table.table1{width:90%; align-self:center; padding-left: 60px }
-         table.table1 th {text-align: center; font-size: 130%} 
+    #one,#two,#three,#four,#five,#six{font-size:130%;color:black;margin-top: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
     li {display: inline;padding:10px}
-    #items{text-align:center}
+    #items{text-align:center; margin-left: auto;margin-right: auto}
     body{background-color:lemonchiffon}
-    caption{align-content: center; font-weight: bold; font-size: x-large
-    ; text-decoration: underline}
+    table.table2 caption{font-weight: bold; font-size: x-large
+    ; text-decoration: underline; color: black}
     table.table2, table.table2 td{text-align: left; width: 60%; padding-left: 85px}
     table.table2{margin-left: auto;margin-right: auto}
     table.table2 td{height: 30px}
 </style>
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" />
 <link href="restarauntStyle.css" 
       rel="stylesheet" 
       type="text/css" />
 </head>
      <body>
+         <div class="container-fluid">
+          <div class="jumbotron" style="text-align:center">
+  <h1>Opening New Location!</h1> 
+  <p>Bardstown road in the Highlands!</p> 
+</div>
     <div>
         <header>
         <h1>Jibba Jabba BBQ</h1>
@@ -29,87 +36,70 @@
     <hr>
     </br>
     <div>
- <ul>
-        <li><a href="restaraunt.html">Home</a></li>
+ <ul class="nav nav-pills">
+        <li class="active"><a href="restaraunt.html"><span class="glyphicon glyphicon-home"></a></li>
        <li><a href="menu.html">Menu</a></li>
        <li><a href="contact.html">Contact Us</a></li>
  </ul>
         </div>
 </br>
 <hr>
-<div id="items">
-    <table class="table1">
-        <tr>
-            <th>Burger and Fries</th>
-            <th>Hot Dog and Chips</th>
-            <th>Italian Sausage and Peppers</th>
-        </tr>
-        <tr>
-            <td>
+<div class="container-fluid">
+   <div class="row" style=text-align:center; style=font-size:130%>
+    <div class="col-sm-4"><p id="one">Burger and Fries</p><br>
                 An American Classic!
                 Your choice - with or without cheese
                 Pickle, onion, tomato, and lettuce
                 Served with our famous thick cut
-                french Fries</br>
-                $7.95
-            </td>
-            <td>
-                An American Classic!
+                french Fries<br>
+                $7.95</div>
+    <div class="col-sm-4"><p id="two">Hot Dog and Chips</p><br>An American Classic!
                 Your choice - White or wheat bun
                 Relish, mustard and Ketchup
                 Served with our house made chips
-                </br>
-                $7.95
-            </td>
-            <td>
-                An All Time-Favorite!!
+                <br>
+                $7.95</div>
+    <div class="col-sm-4"><p id="three">Italian Sausage and Peppers</p><br>
+    An All Time-Favorite!!
                 Your choice -mild or spicey
                 Cole slaw
                 Served with garlic mashers
-                </br>
-                $7.95
-            </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-       <tr>
-            <th>Tenderloin Sandwich and Chips</th>
-            <th>House Salad</th>
-            <th>Brisket Sandwich and Fries</th>
-        </tr>
-         <tr>
-            <td>
-                Really Hits the Spot!
+                <br>
+                $7.95</div>
+   </div>
+</div>
+<div class="container-fluid">
+  <div class="row" style=text-align:center>
+    <div class="col-sm-4"><br></div>
+    <div class="col-sm-4"><br> </div>
+    <div class="col-sm-4"><br></div>
+   </div>
+</div>
+<div class="container-fluid">
+  <div class="row" style=text-align:center>
+    <div class="col-sm-4"><p id="four">Tenderloin Sandwich and Chips</p><br>Really Hits the Spot!
                 Plain or Sesame Seed bun
                 Pickle, onion, tomato, and lettuce
-                Served with our house-made chips</br>
-                $8.95
-            </td>
-            <td>
-                On the Lighter Side
+                Served with our house-made chips<br>
+                $8.95</div>
+    <div class="col-sm-4"><p id="five">House Salad</p><br>On the Lighter Side
                 Your choice-with or without cheese
                 Iceberg lettuce, tomatoes, Peppers
                 Thousand Island or Ranch Dressing
-                Served with dinner roll</br>
-                $6.95
-            </td>
-            <td>
-                A taste of Texas!
+                Served with dinner roll<br>
+                $6.95 </div>
+    <div class="col-sm-4"><p id="six">Brisket Sandwich and Fries</p><br>A taste of Texas!
                 Smoked Brisket on Thick-cut Texas
                 Toast
                 Cole slaw
                 Served with our famous Thick-cut
-                french Fries</br>
-                $7.95
-            </td>
-        </tr>
-        <div id="pad">
-        </table>
+                french Fries<br>
+                $7.95</div>
+   </div>
+</div>
+        <div>
         <table class="table2">
-          <caption>Beverage List</caption>
+          <caption style="text-align:center">Beverage List</caption>
         <tr>
             <td>Root Beer</td>  
              <td>$3.00</td>        
@@ -127,7 +117,8 @@
              <td>$1.25</td>          
         </tr>
            </table>
-</div>
+           </div>
+        
 <hr>
 <div>
     <footer>
@@ -135,6 +126,10 @@
     <p>(502) 123-4567</p>
     </footer>
 </div>
-     
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>   
+</div> 
+</div>
+
 </body>
 </html>
