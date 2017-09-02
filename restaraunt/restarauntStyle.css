@@ -8,3 +8,23 @@ a:link{text-decoration: none}
 a:visited{color: red}
 a:hover{text-decoration:none;font-weight: bold}
 a:active{text-decoration:none}
+
+/* Carousel*/
+.body {
+  background-color: #333333;
+}
+
+.carousel-content {
+    color:black;
+    display:flex;
+    align-content:center;
+    font-size:large;
+    
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px; 
+
+}
